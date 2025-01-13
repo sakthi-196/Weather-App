@@ -4,6 +4,9 @@ import express from "express";
 import bodyParser from "body-parser";
 import axios from "axios";
 import moment from "moment";
+import dotenv from "dotenv";
+dotenv.config();
+console.log(process.env)
 //create instance of express
 const app= express();
 //set port number
@@ -37,7 +40,7 @@ app.get("/",(req,res)=>{
 })
 app.post("/weather",async (req,res)=>{
     const city=req.body.cityName;
-    const ApiKey='22f9195b8d16a2662703f6b660300912';
+    const ApiKey=process.env.API_KEY;
     const ApiURL= `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${ApiKey}`
     var dateAndTime= dateAndTimePicker()
     try{
