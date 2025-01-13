@@ -1,0 +1,96 @@
+*{
+    padding:0;
+    margin:0;   
+}
+body{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("../images/turkish-sunset.avif");
+    width:100%;
+    height:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: galaxy 50s linear infinite;
+}
+@keyframes galaxy{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 100% 100%;
+    }
+}
+.container{
+    color:#BCF2F6;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+    position:relative; 
+    text-align: center;
+}
+.heading-area>h1{
+    font-size:60px;
+    color:#BCF2F6;
+}
+.input-area{
+    margin-top: 60px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.city-input{
+    width:420px;
+    height:30px;
+    border-radius: 15px;
+    background: transparent;
+    outline: white;
+    border:2px solid white;
+    padding:10px;
+    font-size: 20px;
+    color: white;
+}
+::placeholder{
+    color:white;
+    opacity:0.8;
+}
+.btn{
+    height:55px;
+    width:auto;
+    padding:10px;
+    border:2px solid white;
+    background:transparent;
+    color:white;
+    border-radius: 10px;
+    margin:5px;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+}
+.response-area>p{
+    margin:auto;
+    margin-top: 50px;
+    font-size:30px;
+    color:#BCF2F6
+}
+.footer{
+    position:absolute;
+    bottom: 0;
+    width:100%;
+    height:50px;
+    text-align: center;
+}
+@media screen and (max-width:650px){
+    .city-input{
+        width:50%;
+        height:35px;
+        font-size:15px;
+    }
+    .response-area>p{
+        font-size:25px;
+        padding:20px;
+    }
+}

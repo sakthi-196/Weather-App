@@ -1,0 +1,215 @@
+*{
+    padding:0;
+    margin:0;   
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("../images/beautiful-sunset-with.avif");
+    width:100%;
+    height:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: galaxy 50s linear infinite;
+}
+@keyframes galaxy{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 100% 100%;
+    }
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+/*styling input area*/
+.input-area{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width:50%;
+    margin-top:30px;
+}
+/*form input area*/
+.city-input{
+    width:80%;
+    height:30px;
+    border-radius: 15px;
+    background: transparent;
+    outline: aqua;
+    border:2px solid aqua;
+    padding:10px;
+    font-size: 20px;
+    color: aqua;
+}
+::placeholder{
+    color:aqua;
+    opacity:0.8;
+}
+.btn{
+    height:55px;
+    width:auto;
+    padding:10px;
+    border:2px solid aqua;
+    background:transparent;
+    color:aqua;
+    border-radius: 10px;
+    margin-left:20px;
+}
+.btn:hover{
+    background-color: aqua;
+    color: black;
+    border: 2px solid aqua;   
+}
+/*styling response area*/
+.response-area{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*styling box one*/
+.box-one{
+    width:60%;
+    margin-top: 50px;
+}
+.day{
+    padding:5px 0px 5px 10px;
+    background-color: black;
+    color:white;
+    border-radius: 10px 10px 0 0;
+}
+.weather-desc-loc{
+    display:flex; 
+    background-color: rgba(0, 255, 255, 0.847);  
+    border-radius: 0 0 10px 10px;
+    padding:10px;
+    justify-content: space-between;
+}
+.weatherOne{
+    display:flex;
+    flex-direction: column;
+    flex: 1 0 33% ;
+    row-gap:1rem;
+}
+.weather-desc,.weather-loc{
+    border-right:2px solid white;
+    padding:10px 0px 5px 10px;
+    white-space: nowrap;
+}
+.weather-desc h1{
+    color:rgb(255, 225, 0);
+}
+#temp{
+    width:100%;
+    text-align: center;
+    font-size:3rem;
+}
+/* for icon */
+.icon-align{
+    display: flex; 
+    align-items:  center; 
+    column-gap: 1rem;
+    width:100px;
+}
+.align{
+    column-gap: 0.5rem;    
+    margin-bottom:5px;
+}
+/*box-two styling*/
+.box-two{
+    width:60%;  
+    background-color:rgba(0, 255, 255, 0.847); 
+    border-radius: 10px; 
+    margin-top: 50px;
+    padding:10px;
+}
+.weather-details{
+    display:flex; 
+}
+.wDetails{
+    display:flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    flex:1 0 25%;
+}
+.wDetails-heading{
+    color:#98A8F8;
+    margin:10px 0 10px 0;
+    font-size: 2rem;
+}
+.humidity,.feels-like,.pressure{
+    border-right: 2px solid white;
+}
+/*box three styling*/
+.box-three{
+    width:60%;
+    border-radius: 10px;
+    background-color:rgba(0, 255, 255, 0.847);
+    margin-top: 50px;
+}
+#box3-heading{
+    padding: 5px 0px 5px 10px;
+}
+.other-details{
+    display:flex;
+    flex-direction: column;
+    flex:1 1; 
+    padding:10px;
+}
+.cloud,.sunrise,.sunset,.fTime,.lon{
+    border-bottom: 2px solid white;
+}
+.oDetails{
+    display:flex;
+    justify-content: space-between;
+    padding:15px;
+}
+.oDetails-para{
+    font-size: 1rem;
+}
+/*footer styling*/
+.footer{
+    width:100%;
+    height:100px;
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    color:aqua;
+    margin-top: auto;
+    padding:10px 0px 5px 0px;
+}
+@media screen and (max-width: 770px){
+    .weather-desc-loc,.weather-details,.other-details{
+        flex-wrap:wrap;
+        
+    }
+    .weather-desc,.weather-loc,.humidity,.feels-like,.pressure{
+        border-bottom: 2px solid white;
+        border-right: 0;
+    }
+    .wDetails,.weatherOne{
+        flex:1 0 100%;
+        text-align:center;
+        align-items: center;
+    }
+    .city-input{
+        font-size:15px;
+    }
+
+    
+}

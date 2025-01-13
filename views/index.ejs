@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!--stylesheet link -->
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading-area">
+            <h1>Weather Forecast</h1>
+        </div>
+        <div class="response-area">
+        <div class="input-area">
+        <form class='input-form' action="/weather"method= "post">
+            <input class='city-input' type="text" name="cityName" placeholder="Enter city name" required="">
+            <button type="submit" class="btn">
+             Search
+            </button>
+        </form>
+        </div>
+        <p>Enter your City/Town name on search box to get Weather Data</p>
+        </div>
+        <div class="footer">
+            <p>Copyright ©<%= new Date().getFullYear() %> Sakthi All rights reserved</p>
+        </div>
+    </div>
+</body>
+</html>
