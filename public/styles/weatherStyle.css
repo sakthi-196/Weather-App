@@ -48,30 +48,30 @@ body{
     height:30px;
     border-radius: 15px;
     background: transparent;
-    outline: aqua;
-    border:2px solid aqua;
+    outline: #7CF5FF;
+    border:2px solid #7CF5FF;
     padding:10px;
     font-size: 20px;
-    color: aqua;
+    color: #7CF5FF;
 }
 ::placeholder{
-    color:aqua;
+    color:#7CF5FF;
     opacity:0.8;
 }
 .btn{
     height:55px;
     width:auto;
     padding:10px;
-    border:2px solid aqua;
+    border:2px solid #7CF5FF;
     background:transparent;
-    color:aqua;
+    color:#7CF5FF;
     border-radius: 10px;
     margin-left:20px;
 }
 .btn:hover{
-    background-color: aqua;
-    color: black;
-    border: 2px solid aqua;   
+    background-color: #7CF5FF;
+    color: #000000;
+    border: 2px solid #7CF5FF;   
 }
 /*styling response area*/
 .response-area{
@@ -87,30 +87,33 @@ body{
 }
 .day{
     padding:5px 0px 5px 10px;
-    background-color: black;
-    color:white;
+    background-color: #000000;
+    color:#FFFFFF;
     border-radius: 10px 10px 0 0;
 }
 .weather-desc-loc{
     display:flex; 
-    background-color: rgba(0, 255, 255, 0.847);  
+    background-color: #7CF5FF;  
     border-radius: 0 0 10px 10px;
     padding:10px;
-    justify-content: space-between;
+    justify-content:center;
+    align-items: center;
 }
 .weatherOne{
     display:flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex: 1 0 33% ;
     row-gap:1rem;
 }
 .weather-desc,.weather-loc{
-    border-right:2px solid white;
+    border-right:2px solid #FFFFFF;
     padding:10px 0px 5px 10px;
     white-space: nowrap;
 }
 .weather-desc h1{
-    color:rgb(255, 225, 0);
+    color:#FFEB00;
 }
 #temp{
     width:100%;
@@ -120,6 +123,7 @@ body{
 /* for icon */
 .icon-align{
     display: flex; 
+    justify-content: center;
     align-items:  center; 
     column-gap: 1rem;
     width:100px;
@@ -131,7 +135,7 @@ body{
 /*box-two styling*/
 .box-two{
     width:60%;  
-    background-color:rgba(0, 255, 255, 0.847); 
+    background-color:#7CF5FF; 
     border-radius: 10px; 
     margin-top: 50px;
     padding:10px;
@@ -152,13 +156,13 @@ body{
     font-size: 2rem;
 }
 .humidity,.feels-like,.pressure{
-    border-right: 2px solid white;
+    border-right: 2px solid #FFFFFF;
 }
 /*box three styling*/
 .box-three{
     width:60%;
     border-radius: 10px;
-    background-color:rgba(0, 255, 255, 0.847);
+    background-color:#7CF5FF;
     margin-top: 50px;
 }
 #box3-heading{
@@ -171,7 +175,7 @@ body{
     padding:10px;
 }
 .cloud,.sunrise,.sunset,.fTime,.lon{
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #FFFFFF;
 }
 .oDetails{
     display:flex;
@@ -189,7 +193,7 @@ body{
     white-space: nowrap;
     justify-content: center;
     align-items: center;
-    color:aqua;
+    color:#7CF5FF;
     margin-top: auto;
     padding:10px 0px 5px 0px;
 }
@@ -199,7 +203,7 @@ body{
         
     }
     .weather-desc,.weather-loc,.humidity,.feels-like,.pressure{
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid #FFFFFF;
         border-right: 0;
     }
     .wDetails,.weatherOne{
@@ -209,7 +213,5 @@ body{
     }
     .city-input{
         font-size:15px;
-    }
-
-    
+    }    
 }
